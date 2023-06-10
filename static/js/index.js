@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollToSection(".services-btn", ".services-section");
     scrollToSection(".projetos-btn", ".portfolio-section");
     scrollToSection(".contact-btn-nav", ".contact");
+    scrollToSection("#contact-me-btn", ".contact");
     scrollToSection(".footer-about", ".services-section");
 
 
@@ -129,15 +130,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     const wapp = document.querySelector(".wapp");
+    const wappMini = document.querySelector(".whatsapp-mini");
     const instagram = document.querySelector(".instagram");
     const linkedin = document.querySelector(".linkedin")
-    const mensagem = 'Olá, vi seu portfólio e gostaria mais de saber sobre seus serviços.'
+    const linkedinMini = document.querySelector(".linkedin-mini")
+    const hireMe = document.querySelector("#hire-me-btn");
+    const instagramMini = document.querySelector(".instagram-mini");
+
+    const mensagem = 'Olá, vi seu portfólio e gostaria de saber mais a respeito de você e seus serviços.'
+    const hireMsg = 'Olá, vi seu portfólio e gostaria marcar uma entrevista.'
 
     wapp.addEventListener("click", function () {
         window.open(`https://api.whatsapp.com/send?phone=86995687211&text=${mensagem}`, '_blank');
     });
 
+    wappMini.addEventListener("click", function () {
+        window.open(`https://api.whatsapp.com/send?phone=86995687211&text=${mensagem}`, '_blank');
+    });
+
+
     instagram.addEventListener("click", function () {
+        window.open(`https://www.instagram.com/_eder.campos`, '_blank');
+    }
+    );
+
+    instagramMini.addEventListener("click", function () {
         window.open(`https://www.instagram.com/_eder.campos`, '_blank');
     }
     );
@@ -146,6 +163,18 @@ document.addEventListener("DOMContentLoaded", function () {
         window.open(`https://www.linkedin.com/in/ederdk/`, '_blank');
     }
     );
+
+    linkedinMini.addEventListener("click", function () {
+        window.open(`https://www.linkedin.com/in/ederdk/`, '_blank');
+    }
+    );
+
+    hireMe.addEventListener("click", function () {
+        window.open(`https://api.whatsapp.com/send?phone=86995687211&text=${hireMsg}`, '_blank')
+    }
+    );
+
+
 
 
     //Setas Portfolio
