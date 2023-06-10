@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6dd654c413.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="static/css/index.css">
+    <script src="static/js/index.js"></script>
+    <!--Adiciona icone a aba do navegador-->
+    <link rel="shortcut icon" href="static/img/contact.ico" type="image/x-icon">
+
+
+
+    <!-- Bootstrap JS CDN (incluindo o jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Eder Campos</title>
+
+</head>
+
+<body>
+    <!-- Menu Responsivo -->
+    <header class="header">
+        <a href="#" class="logo">Godinho.</a>
+        <nav class="navbar" id="navbar">
+            <a href="" class="active home-btn-nav">Home</a>
+            <a href="#" class="about-btn">Sobre</a>
+            <a href="#" class="services-btn">Hard Skills</a>
+            <a href="#" class="projetos-btn">Projetos</a>
+            <a href="#" class="contact-btn-nav">Contato</a>
+        </nav>
+        <span class="toggle-menu">
+            <i class="fas fa-bars"></i>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Eder Godinho</h1>
+            <h3>Eu sou&nbsp; <span id="word"></span><span class="blinker">&nbsp|</span></h3>
+            <p class="home-text">
+                <br> If there's a lock, so there's a key.
+            </p>
+            <div class="btn-box">
+                <a href="#" draggable="false">Me contrate</a>
+                <a href="#" draggable="false">Contate-me</a>
+            </div>
+        </div>
+        <div class="imageBG">
+            <img src="static/img/profilephoto.jpg" draggable="false" height="600px">
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-square-github fa-xl"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+            <a href="#"><i class="fa-brands fa-square-whatsapp fa-xl"></i></a>
+        </div>
+    </section>
+    <div class="secoes">
+        <!--Criar várias sections-->
+        <section class="about" id="about">
+            <div class="about-right">
+                <h1>Sobre mim</h1>
+                <div class="content-about">
+                    <div class="texto-about">
+                        <div class="about-header">
+                            <ul>
+                                <li><strong>Pessoais</strong><br>Tenho 26 anos e sou fascinado por ciência, tecnologia e
+                                    natureza.</li>
+                                <li><strong>Formação</strong><br>Conclui uma graduação pela UFPI, sou pós-graduado em
+                                    Bioinformática e agora faço uma 2° graduação CST em Data Science</li>
+                                <li><strong>Onde estou atualmente</strong><br>Atuo como desenvolvedor e analista de
+                                    dados desde 2021. Estou em migração definitiva para a carreira na área tech.
+                                <li><strong>Skills em Desenvolvimento</strong><br>Desenvolvimento de modelos de machine
+                                    learning<br>Criação de APIs com Flask e Docker para deploy em ambientes de cloud
+                                    computing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-about">
+                    <h2>
+                        Hard Skills
+                    </h2>
+                    <a><i class="fa-solid fa-arrow-down fa-xl"></i></a>
+                </div>
+        </section>
+
+
+        <section class="services-section">
+            <div class="services-dev">
+                <h1>Hard Skills</h1>
+                <div class="skills">
+
+                    <div class="frontend content-services">
+                        <h3 class="front-title teste-popover" data-bs-toggle="popover" data-bs-title="Frontend"
+                            data-bs-content="Iniciei os estudos na área de tecnologia em 2014, estudando HTML5, CSS, C++, etc...">
+                            <i class="fa-regular fa-object-group"></i>&nbsp;Frontend
+                        </h3>
+                        <p class="teste-popover">HTML5</p>
+                        <p>CSS3</p>
+                        <p>JavaScript</p>
+                        <p>Bootstrap</p>
+                    </div>
+
+                    <div class="backend content-services">
+                        <h3 class="teste-popover" data-bs-toggle="popover" data-bs-title="Sobre Python"
+                            data-bs-content="Python é linguagem principal que utilizo. Tenho experiência com criação e integração com APIs, automação de tarefas, machine learning dentre outras tarefas">
+                            <i class="fa-brands fa-python"></i>&nbsp;Backend
+                        </h3>
+                        <p>Python</p>
+                        <p>Flask</p>
+                        <p>Django</p>
+                        <p>Node.js</p>
+                    </div>
+
+                    <div class="database content-services">
+                        <h3 class="teste-popover" data-bs-toggle="popover" data-bs-title="Banco de Dados"
+                            data-bs-content="Além da experiência com os bancos de dados relacionais, uso frequentemente a persistencia em arquivos JSON e integração com o Google Sheets.">
+                            <i class="fa-solid fa-database"></i>&nbsp;Banco de Dados
+                        </h3>
+                        <p>MySQL</p>
+                        <p>MariaDB</p>
+                        <p>PostgreeSQL</p>
+                        <p>SQLite</p>
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="ds content-services">
+                        <h3 class="teste-popover" data-bs-toggle="popover" data-bs-title="Data Science"
+                            data-bs-content="Desenvolvo scripts voltados para Data Science e realizo análises de BI. Faço mineração, estruturação e análise de dados.">
+                            <i class="fa-solid fa-table"></i>&nbsp;Data Science
+                        </h3>
+                        <p>Data Studio</p>
+                        <p>PowerBI</p>
+                        <p>Pandas</p>
+                        <p>Numpy</p>
+                        <p>Seaborn</p>
+                        <p>Scikit-Learn</p>
+                        <p>Keras</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <div class="arrows left-arrow">
+                <a><i class="fa-solid fa-arrow-left fa-xl"></i></a>
+            </div>
+            <div class="container-portfolio">
+                <div class="caixa index_1">
+                    <h4>Projeto 1</h4>
+                    <p>Alguma coisa está aqui</p>
+                </div>
+                <div class="caixa index_2">
+                    <h4>Projeto 2</h4>
+                    <div class="left-projeto">
+                        <p>Alguma coisa está aqui</p>
+                    </div>
+                </div>
+                <div class="caixa index_3">
+                    <h4>Projeto 3</h4>
+                    <p>Alguma coisa está aqui</p>
+                </div>
+                <div class="caixa index_4">
+                    <h4>Projeto 4</h4>
+                    <p>Alguma coisa está aqui</p>
+                </div>
+                <div class="caixa index_5">
+                    <h4>Projeto 5</h4>
+                    <p>Alguma coisa está aqui</p>
+                </div>
+            </div>
+            <div class="arrows right-arrow">
+                <a><i class="fa-solid fa-arrow-right fa-xl"></i></a>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-left">
+                <h1>Contact</h1>
+                <h2>Get in touch</h2>
+                <div class="contact-socials">
+                    <img class="wapp" src="static/img/whatsapp.png" draggable="false" width="300px">
+                    <img class="instagram" src="static/img/instagram.png" draggable="false" width="300px">
+                    <img class="linkedin" src="static/img/linkedin.png" draggable="false" width="300px">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--Section sobre: -->
+</body>
+
+</html>
