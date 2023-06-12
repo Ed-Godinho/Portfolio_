@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
+/*
     //Setas Portfolio
 
     // Obtém o container das divs
@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('.right-arrow a').addEventListener('click', nextDiv);
 
     // Exibe a primeira div inicialmente
-    showCurrentDiv();
+    showCurrentDiv();*/
 
 
 });
