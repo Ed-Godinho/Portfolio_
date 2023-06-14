@@ -7,28 +7,33 @@ document.addEventListener("DOMContentLoaded", function () {
     let isDeleting = false;
 
     function type() {
-        const word = words[currentWordIndex];
-        const span = document.getElementById("word");
-
+        const word = words[currentWordIndex]; // Obtém a palavra atual a ser digitada
+        const span = document.getElementById("word"); // Obtém a referência ao elemento HTML onde a palavra será exibida
+    
         if (isDeleting) {
+            // Modo de deleção - remove um caractere da palavra atual e decrementa o índice do caractere
             span.textContent = word.substring(0, currentCharIndex - 1);
             currentCharIndex--;
         } else {
+            // Modo de digitação - adiciona um caractere à palavra atual e incrementa o índice do caractere
             span.textContent = word.substring(0, currentCharIndex + 1);
             currentCharIndex++;
         }
-
+    
         if (!isDeleting && currentCharIndex === word.length) {
+            // Condição para iniciar a deleção quando terminar de digitar a palavra atual
             isDeleting = true;
-            setTimeout(type, 1500);
+            setTimeout(type, 1500); // Aguarda 1500 milissegundos (1,5 segundos) antes de chamar novamente a função type()
         } else if (isDeleting && currentCharIndex === 0) {
+            // Condição para passar para a próxima palavra após deletar completamente a palavra atual
             isDeleting = false;
-            currentWordIndex = (currentWordIndex + 1) % words.length;
-            setTimeout(type, 200);
+            currentWordIndex = (currentWordIndex + 1) % words.length; // Passa para a próxima palavra (ou volta à primeira palavra se já chegou à última)
+            setTimeout(type, 200); // Aguarda 200 milissegundos antes de chamar novamente a função type()
         } else {
-            setTimeout(type, 30);
+            setTimeout(type, 30); // Chama novamente a função type() após um intervalo de 30 milissegundos para continuar o efeito de digitação
         }
     }
+    
     type();
 
 
